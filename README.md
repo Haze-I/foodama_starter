@@ -1,1 +1,0 @@
-# foodama_starter
