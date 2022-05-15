@@ -32,32 +32,38 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(
             height: 10,
           ),
-          SizedBox(
-            height: 35,
-            child: ListView.builder(
-              itemBuilder: (context, index) {
-                return TabChip(
-                  isSelected: index == selectedIndex,
-                  onPressed: () {
-                    setState(() {
-                      selectedIndex = index;
-                    });
-                  },
-                  text: categories[index],
-                );
-              },
-              itemCount: categories.length,
-              scrollDirection: Axis.horizontal,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: SizedBox(
+              height: 35,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return TabChip(
+                    isSelected: index == selectedIndex,
+                    onPressed: () {
+                      setState(() {
+                        selectedIndex = index;
+                      });
+                    },
+                    text: categories[index],
+                  );
+                },
+                itemCount: categories.length,
+                scrollDirection: Axis.horizontal,
+              ),
             ),
           ),
           const SizedBox(height: 10),
-          SizedBox(
-            height: 275,
-            child: ListView.builder(
-              itemBuilder: (context, index) {
-                return const FoodCard();
-              },
-              scrollDirection: Axis.horizontal,
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: SizedBox(
+              height: 275,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return const FoodCard();
+                },
+                scrollDirection: Axis.horizontal,
+              ),
             ),
           ),
         ],
