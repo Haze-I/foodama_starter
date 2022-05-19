@@ -132,3 +132,17 @@ class FoodCard extends StatelessWidget {
     );
   }
 }
+
+//onTap : (){
+//Get.to(()=> FoodDetail())
+//},
+//wrap everything around gesture detector and write a get to message
+//can't we use the on pressed property tho
+
+//backButton onTap 
+//doing routes in a proffessional way
+//class RouteHelper(){
+//static const String initial = "/"; 
+//static List<Get Page> routes = [
+//GetPage(name: "/", page: ()=> Home())];
+//}
