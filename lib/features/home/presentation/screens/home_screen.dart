@@ -62,6 +62,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemBuilder: (context, index) {
                   return const FoodCard();
                 },
+                //itemCount: adjust it to the size of the food list
                 scrollDirection: Axis.horizontal,
               ),
             ),
